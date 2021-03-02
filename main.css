@@ -1,3 +1,43 @@
-
-body{
-}
+        body{
+            padding: 5vw;
+            margin: 0%;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size:  5vw;
+            background-color: black;
+        }
+        p{     
+            color: #a600ff;
+            animation-name: x;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+        h1:hover{
+            font-size: 20vw;
+        }
+        h1::selection{
+            color: white;
+        }
+        p:hover{
+            font-size: 9vw;
+        }
+        p::selection{
+            color: white;
+        }
+        h1{
+            font-size: 16vw;
+            color: #0000e6;
+            animation-name: y;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes x {
+            from {color: #a600ff}
+            to {color: #0000e6}
+          }
+        @keyframes y {
+            from {color: #0000e6}
+            to {color: #a600ff}
+          }   
